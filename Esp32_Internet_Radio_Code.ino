@@ -190,12 +190,6 @@ void nextStation() {
 }
 
 
-void nextStation() {
-    currentStation = (currentStation + 1) % totalStations;
-    displayStation();
-    connectToHost();
-}
-
 void previousStation() {
     currentStation = (currentStation - 1 + totalStations) % totalStations;
     displayStation();
